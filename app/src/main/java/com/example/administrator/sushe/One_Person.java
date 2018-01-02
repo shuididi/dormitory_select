@@ -58,7 +58,7 @@ public class One_Person extends Activity implements View.OnClickListener{
         mSex = (TextView) findViewById(R.id.sex);
 
 
-        mBtn=(Button)findViewById(R.id.begin_btn);
+        mBtn=(Button)findViewById(R.id.en_button);
         mBtn.setOnClickListener(this);
 
         //User stuid=(User)getApplicationContext();
@@ -205,7 +205,7 @@ public class One_Person extends Activity implements View.OnClickListener{
             JSONObject a = new JSONObject(data);
             String code = a.getString("errcode");
             if (code == "0") {//请求成功
-                Intent intent = new Intent(this, Result.class);//页面跳转
+                Intent intent = new Intent(this, Sucessful.class);//页面跳转
                 startActivity(intent);//加载页面
                 this.finish();//关闭此页面
             } else {

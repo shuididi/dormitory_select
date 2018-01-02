@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +26,7 @@ public class Select_Begin extends AppCompatActivity implements View.OnClickListe
 
     private TextView mName, mStuNum, mSex, mCheck;
     private Button mBtn;
+    private ImageView mBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,7 @@ public class Select_Begin extends AppCompatActivity implements View.OnClickListe
         mSex = (TextView) findViewById(R.id.sex);
         mCheck = (TextView) findViewById(R.id.check_code);
         mBtn=(Button)findViewById(R.id.begin_btn);
+        mBack=(ImageView)findViewById(R.id.btn_back);
         mBtn.setOnClickListener(this);
 
         //Intent intent =this.getIntent();
@@ -149,8 +152,23 @@ public class Select_Begin extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+//        switch (view.getId()) {
+//            case R.id.begin_btn:
+//                Intent intent = new Intent(this, Select_Dormitory.class);
+//                startActivity(intent);
+//                finish();
+//                break;
+//            case R.id.btn_back:
+//                Intent j = new Intent(this, LoginActivity.class);
+//                startActivity(j);
+//                finish();
+//                break;
+//            default:
+//                break;
+
         Intent intent = new Intent(this, Select_Dormitory.class);
         startActivity(intent);
         finish();
+//        }
     }
 }

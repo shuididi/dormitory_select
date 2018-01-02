@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
     <RelativeLayout
         android:id="@+id/mainTitle"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="30dp"
         android:gravity="center_vertical"
-        android:background="#5bb9ea"
+        android:background="#4ecbdc"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -17,194 +17,218 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="单人办理宿舍"
-            android:textSize="20dp"
+            android:text="双人选宿舍"
+            android:textSize="25dp"
             android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
 
 
     </RelativeLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@android:color/white">
-
-            <TextView
-                android:id="@+id/nameView"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:paddingLeft="15dp"
-                android:gravity="center_vertical"
-                android:text="姓名"
-                android:textSize="20dp"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingRight="15dp"
-                android:gravity="center_vertical|right"
-                android:text="测试姓名"
-                android:textSize="20dp"
-                android:textColor="#808A87"/>
-
-        </LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainTitle"
+        android:orientation="vertical"
+        android:background="#F5F5F5">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@android:color/white">
-
-            <TextView
-                android:id="@+id/stuNumView"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:paddingLeft="15dp"
-                android:gravity="center_vertical"
-                android:text="学号"
-                android:textSize="20dp"
-                android:textColor="#000000"/>
-
-            <TextView
-                android:id="@+id/stuNum"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingRight="15dp"
-                android:gravity="center_vertical|right"
-                android:text="1701210000"
-                android:textSize="20dp"
-                android:textColor="#808A87"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@android:color/white">
-
-            <TextView
-                android:id="@+id/sexView"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:paddingLeft="15dp"
-                android:gravity="center_vertical"
-                android:text="性别"
-                android:textSize="20dp"
-                android:textColor="#000000"/>
-
-            <TextView
-                android:id="@+id/sex"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingRight="15dp"
-                android:gravity="center_vertical|right"
-                android:text="女"
-                android:textSize="20dp"
-                android:textColor="#808A87"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="40dp">
-
-            <TextView
-                android:id="@+id/show_buliding"
-                android:layout_width="280dp"
-                android:layout_height="match_parent"
-                android:paddingLeft="15dp"
-                android:gravity="center_vertical"
-                android:text="目标宿舍楼    13号楼"
-                android:textSize="20dp"
-                android:textColor="#000000"/>
-
-            <Spinner
-                android:id="@+id/choose_buliding_number"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical">
-
-            </Spinner>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:text="同住人信息"
-            android:textSize="20dp"
-            android:layout_marginLeft="15sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:background="#ffffff"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/username11"
-
-                android:layout_marginLeft="15sp"
-                android:gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="学号"
-                android:textColor="#160202"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/username1"
-                android:inputType="number"
-                android:textColor="#160202"
-                android:textSize="16sp"
-                android:hint="请输入学号"
-                android:layout_marginLeft="30sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-        <LinearLayout
-            android:background="#ffffff"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/password11"
-
-                android:layout_marginLeft="15sp"
-                android:gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="校验码"
-                android:textColor="#160202"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/password1"
-                android:inputType="number"
-                android:textColor="#160202"
-                android:textSize="16sp"
-                android:layout_marginLeft="10sp"
-                android:hint="请输入校验码"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-
-
-        <Button
-            android:id="@+id/en_button"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
-            android:text="确定"
-            android:textSize="20sp"
-            android:background="@drawable/shape"/>
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+
+            android:showDividers="middle|beginning|end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/nameView"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="姓名"
+                    android:textSize="20dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text="测试姓名"
+                    android:textSize="20dp"
+                    android:textColor="#808A87"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/stuNumView"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="学号"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/stuNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text="1701210000"
+                    android:textSize="20dp"
+                    android:textColor="#808A87"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/sexView"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="性别"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text="女"
+                    android:textSize="20dp"
+                    android:textColor="#808A87"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/show_buliding"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="目标宿舍楼    13号楼"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <Spinner
+                    android:id="@+id/choose_buliding_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                </Spinner>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:text="同住人信息"
+                android:textSize="20dp"
+                android:layout_marginLeft="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/username11"
+
+                    android:layout_marginLeft="15sp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="学号"
+                    android:textColor="#160202"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/username1"
+                    android:inputType="number"
+                    android:textColor="#160202"
+                    android:textSize="16sp"
+                    android:hint="请输入学号"
+                    android:layout_marginLeft="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/password11"
+
+                    android:layout_marginLeft="15sp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="校验码"
+                    android:textColor="#160202"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/password1"
+                    android:inputType="number"
+                    android:textColor="#160202"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10sp"
+                    android:hint="请输入校验码"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/en_button"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="开始办理"
+                android:onClick="finish_login"
+                android:background="#545bcb"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/login_edit_pwd"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="80dp" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
-
 </RelativeLayout>

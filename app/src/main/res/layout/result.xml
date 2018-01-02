@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:gravity="center_vertical"
-        android:background="@android:color/darker_gray"
+        android:background="#4ecbdc"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -29,21 +29,7 @@
             android:layout_centerVertical="true"
             android:src="@drawable/back"/>
 
-        <ImageView
-            android:id="@+id/btn_update"
-            android:layout_width="45dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/update"/>
 
-        <ImageView
-            android:id="@+id/btn_share"
-            android:layout_width="45dp"
-            android:layout_height="match_parent"
-            android:layout_toLeftOf="@+id/btn_update"
-            android:layout_centerVertical="true"
-            android:src="@drawable/share"/>
 
 
     </RelativeLayout>

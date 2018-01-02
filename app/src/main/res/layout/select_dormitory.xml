@@ -30,21 +30,7 @@
             android:layout_centerVertical="true"
             android:src="@drawable/back"/>
 
-        <ImageView
-            android:id="@+id/btn_update"
-            android:layout_width="45dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/update"/>
 
-        <ImageView
-            android:id="@+id/btn_share"
-            android:layout_width="45dp"
-            android:layout_height="match_parent"
-            android:layout_toLeftOf="@+id/btn_update"
-            android:layout_centerVertical="true"
-            android:src="@drawable/share"/>
 
 
     </RelativeLayout>
@@ -185,10 +171,10 @@
         </RelativeLayout>
         <Button
             android:id="@+id/one1"
-            android:layout_marginTop="20sp"
+            android:layout_marginTop="40sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffffff"
+            android:background="#faf4fa"
             android:text="单人办理"
             android:textColor="#160202"
             android:textSize="25sp" />
@@ -196,7 +182,7 @@
             android:id="@+id/two2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#dad8d8"
+            android:background="#e2e1e1"
             android:text="双人办理"
             android:textColor="#160202"
             android:textSize="25sp" />
@@ -204,7 +190,7 @@
             android:id="@+id/three3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fffeff"
+            android:background="#faf4fa"
             android:text="三人办理"
             android:textColor="#160202"
             android:textSize="25sp" />
@@ -212,7 +198,7 @@
             android:id="@+id/four4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ccc6c6"
+            android:background="#d9d5d5"
             android:text="四人办理"
             android:textColor="#160202"
             android:textSize="25sp" />

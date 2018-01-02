@@ -140,15 +140,29 @@ public class LoginActivity extends Activity implements View.OnClickListener {
             System.out.println(a.get("errcode"));
             String code = a.getString("errcode");
             if (code.equals("0")) {
-                System.out.println("OK");
-                Intent intent = new Intent(this, Select_Begin.class);
-                //intent.putExtra("username",username);
-
-                startActivity(intent);
-                this.finish();
-
+                //System.out.println("OK");
                 String studentid=mAccount.getText().toString();
                 ((User)getApplication()).setStudentid(studentid);
+                int i = Integer.parseInt(studentid);
+                if (i % 2 ==1) {
+                    Intent intent = new Intent(this, Select_Begin.class);//页面跳转
+                    //intent.putExtra("username", username);
+                    startActivity(intent);//加载页面
+                    this.finish();//关闭此页面
+                }else{
+                    Intent intent = new Intent(this, Result.class);//页面跳转
+                    //intent.putExtra("username", username);
+                    startActivity(intent);//加载页面
+                    this.finish();//关闭此页面
+                }
+                //Intent intent = new Intent(this, Select_Begin.class);
+                //intent.putExtra("username",username);
+
+                //startActivity(intent);
+                //this.finish();
+
+                //String studentid=mAccount.getText().toString();
+                //((User)getApplication()).setStudentid(studentid);
             } else if (code.equals("40001")) {
                 Looper.prepare();
                 Toast.makeText(LoginActivity.this, "学号不存在", Toast.LENGTH_SHORT).show();

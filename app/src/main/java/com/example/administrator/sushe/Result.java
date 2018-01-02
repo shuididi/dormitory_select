@@ -12,7 +12,7 @@ import com.example.administrator.test.R;
  * Created by Administrator on 2017/12/12.
  */
 
-public class Result extends Activity implements View.OnClickListener{
+public class Result extends Activity{
 
     private TextView mName, mStuNum, mSex,mbuilding;
     private Button mBtn;
@@ -21,15 +21,15 @@ public class Result extends Activity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.successful);
-
-        mBtn = (Button)findViewById(R.id.en_button1);
-        mBtn.setOnClickListener(this);
-    }
-
-    @Override
-    public void onClick(View view) {
         setContentView(R.layout.result);
+
+        //mBtn = (Button)findViewById(R.id.en_button1);
+        //mBtn.setOnClickListener(this);
+    //}
+
+    //@Override
+    //public void onClick(View view) {
+        //setContentView(R.layout.result);
         mStuNum = (TextView) findViewById(R.id.stuNum);
         mName = (TextView) findViewById(R.id.name);
         mSex = (TextView) findViewById(R.id.sex);

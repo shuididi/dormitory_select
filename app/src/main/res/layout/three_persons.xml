@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
     <RelativeLayout
         android:id="@+id/mainTitle"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:gravity="center_vertical"
-        android:background="#5bb9ea"
+        android:background="#4ecbdc"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -17,17 +17,29 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="单人办理宿舍"
-            android:textSize="20dp"
+            android:text="三人选宿舍"
+            android:textSize="27dp"
             android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
 
 
     </RelativeLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainTitle"
+        android:orientation="vertical"
+        android:background="#F5F5F5">
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -109,8 +121,9 @@
 
         </LinearLayout>
 
+
         <LinearLayout
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="40dp">
 
@@ -251,14 +264,18 @@
 
         <Button
             android:id="@+id/en_button"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="match_parent"
+
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="确定"
-            android:textSize="20sp"
-            android:background="@drawable/shape"/>
+            android:text="开始办理"
+            android:onClick="finish_login"
+            android:background="#545bcb"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/login_edit_pwd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp" />
 
     </LinearLayout>
 

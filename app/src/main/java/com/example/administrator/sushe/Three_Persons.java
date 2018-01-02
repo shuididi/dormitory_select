@@ -226,7 +226,8 @@ public class Three_Persons extends Activity implements View.OnClickListener{
             JSONObject a = new JSONObject(data);
             String code = a.getString("errcode");
             if (code == "0") {//请求成功
-                Intent intent = new Intent(this, Result.class);//页面跳转
+
+                Intent intent = new Intent(this, Sucessful.class);//页面跳转
                 startActivity(intent);//加载页面
                 this.finish();//关闭此页面
             } else {
